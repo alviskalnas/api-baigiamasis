@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './API-page/header/header';
+import NewApi from './API-page/api-main';
+import UsersPage from './API-page/users-page/users-page';
+import FillDeletePage from './API-page/fill-delete-form-page/fill-delete-form-page';
+import UsersAlbums from './API-page/users-albums/users-albums';
+import UsersPostsPage from './API-page/users-posts-page/users-posts-page';
+import UserPage from './API-page/user-page/user-page';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<NewApi />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/fill-delete" element={<FillDeletePage />} />
+        <Route path="/users-albums" element={<UsersAlbums />} />
+        <Route path="/users-posts" element={<UsersPostsPage />} />
+        <Route path="/user/:id" element={<UserPage />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+
+
