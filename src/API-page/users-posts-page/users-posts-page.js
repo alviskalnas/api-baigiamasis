@@ -22,7 +22,7 @@ const UsersPostsPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-users-posts">
       <h1>Users Posts Page</h1>
       <ul>
         {posts.map(post => {

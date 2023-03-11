@@ -1,33 +1,39 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import './api-main.scss';
 
 const NewApi = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
-      .then(res => res.json())
-      .then(userData => {
-        setUsers(userData)
+    axios.get('http://localhost:3000/users')
+      .then(res => {
+        setUsers(res.data);
       })
-  }, [])
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   const [userPosts, setUserPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/posts')
-      .then(res => res.json())
-      .then(postsData => {
-        setUserPosts(postsData)
+    axios.get('http://localhost:3000/posts')
+      .then(res => {
+        setUserPosts(res.data);
       })
-  }, [])
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   const getUserPostsCount = (id) => {
     return userPosts.filter(post => post.userId === id).length;
   }
 
   return (
-    <div>
+    <div className="main-wrapper">
       <h1>User list:</h1>
       <ul>
         {users && users.length > 0 && users.map((user, index) => {
@@ -46,6 +52,7 @@ const NewApi = () => {
 }
 
 export default NewApi;
+
 
 
 
