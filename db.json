@@ -2,7 +2,8 @@
     "users": [
         {
             "id": 1,
-            "name": "Petras Petraitis",
+            "name": "Petras",
+            "surname": "Petraitis",
             "username": "petrix",
             "email": "p.p@example.com",
             "address": {
@@ -21,11 +22,15 @@
                 "name": "Acme Corporation",
                 "catchPhrase": "Paversti pasauli grazesniu",
                 "hoby": "Software development"
-            }
+            },
+            "albumId": [
+                1
+            ]
         },
         {
             "id": 2,
-            "name": "Maryte Marijauskiene",
+            "name": "Maryte",
+            "surname": "Marijauskiene",
             "username": "maryte",
             "email": "mare@example.com",
             "address": {
@@ -44,11 +49,15 @@
                 "name": "Skalbykla",
                 "catchPhrase": "Kad viskas butu svaru",
                 "hoby": "Skalbimo zinove"
-            }
+            },
+            "albumId": [
+                2
+            ]
         },
         {
             "id": 3,
-            "name": "Jurgis Jurgaitis",
+            "name": "Jurgis",
+            "surname": "Jurgaitis",
             "username": "jurgiux",
             "email": "jura@example.com",
             "address": {
@@ -67,11 +76,15 @@
                 "name": "mechanikas",
                 "catchPhrase": "Negerai, parejus granata",
                 "hoby": "automobiliu taisymas"
-            }
+            },
+            "albumId": [
+                3
+            ]
         },
         {
             "id": 4,
-            "name": "Jurga Dundulyte",
+            "name": "Jurga",
+            "surname": "Dundulyte",
             "username": "jurgitee",
             "email": "jurgadu@example.com",
             "address": {
@@ -90,11 +103,15 @@
                 "name": "Siuveja",
                 "catchPhrase": "Galiu kuom padet?",
                 "hoby": "krepsinis"
-            }
+            },
+            "albumId": [
+                4
+            ]
         },
         {
             "id": 5,
-            "name": "Antanina Antanaitiene",
+            "name": "Antanina",
+            "surname": "Antanaitiene",
             "username": "antanta",
             "email": "antanina@example.com",
             "address": {
@@ -113,11 +130,15 @@
                 "name": "Sekretore",
                 "catchPhrase": "Viskas gerai su tais popieriais",
                 "hoby": "Sachmatai"
-            }
+            },
+            "albumId": [
+                5
+            ]
         },
         {
             "id": 6,
-            "name": "Stasys Bertulis",
+            "name": "Stasys",
+            "surname": "Bertulis",
             "username": "staska",
             "email": "staska@example.com",
             "address": {
@@ -136,11 +157,15 @@
                 "name": "Sandelininkas",
                 "catchPhrase": "Gal turite klausimu?",
                 "hoby": "Grybavimas"
-            }
+            },
+            "albumId": [
+                6
+            ]
         },
         {
             "id": 7,
-            "name": "Anton Butko",
+            "name": "Anton",
+            "surname": "Butko",
             "username": "anton",
             "email": "a.butko@example.com",
             "address": {
@@ -159,11 +184,15 @@
                 "name": "Mokytojas",
                 "catchPhrase": "Viskas gerai, kas gerai baigiasi",
                 "hoby": "Kryziazodziai"
-            }
+            },
+            "albumId": [
+                7
+            ]
         },
         {
             "id": 8,
-            "name": "Zina Ziniene",
+            "name": "Zina",
+            "surname": "Ziniene",
             "username": "zina",
             "email": "zinzi@example.com",
             "address": {
@@ -182,11 +211,15 @@
                 "name": "Nare profesionale",
                 "catchPhrase": "Nera blogo oro, yra bloga apranga",
                 "hoby": "Keliones"
-            }
+            },
+            "albumId": [
+                8
+            ]
         },
         {
             "id": 9,
-            "name": "Mariu Marijauskas",
+            "name": "Mariu",
+            "surname": "Marijauskas",
             "username": "kietas33",
             "email": "marius.m@example.com",
             "address": {
@@ -205,11 +238,15 @@
                 "name": "Gyvunu prieglaudos direktorius",
                 "catchPhrase": "Visada visiems padeti",
                 "hoby": "Maratonai"
-            }
+            },
+            "albumId": [
+                9
+            ]
         },
         {
             "id": 10,
-            "name": "Zbignevas Paskevicius",
+            "name": "Zbignevas",
+            "surname": "Paskevicius",
             "username": "paska",
             "email": "z.paskev@example.com",
             "address": {
@@ -228,7 +265,10 @@
                 "name": "Statybininkas",
                 "catchPhrase": "Tept slept ir viskas",
                 "hoby": "Medziokle"
-            }
+            },
+            "albumId": [
+                10
+            ]
         }
     ],
     "posts": [
@@ -603,12 +643,83 @@
             "name": "Linda Chen",
             "email": "linda.chen@example.com",
             "body": "This post is a great reminder of why I love reading your blog. Thanks for sharing!"
+        },
+        {
+            "commentid": 11,
+            "postId": 1,
+            "name": "Mark Wilson",
+            "email": "mark.wilson@example.com",
+            "body": "I found your post really insightful. Keep up the great work!"
+        },
+        {
+            "commentid": 12,
+            "postId": 1,
+            "name": "Rachel Hernandez",
+            "email": "rachel.hernandez@example.com",
+            "body": "Your writing is so clear and easy to understand. Thanks for sharing your knowledge!"
+        },
+        {
+            "commentid": 13,
+            "postId": 1,
+            "name": "Mark Thompson",
+            "email": "mark.thompson@example.com",
+            "body": "This post is a great example of why your blog is one of my favorites!"
+        },
+        {
+            "commentid": 14,
+            "postId": 1,
+            "name": "Rachel Perez",
+            "email": "rachel.perez@example.com",
+            "body": "Your insights always leave me thinking. Thanks for sharing!"
+        },
+        {
+            "commentid": 15,
+            "postId": 1,
+            "name": "Carlos Sanchez",
+            "email": "carlos.sanchez@example.com",
+            "body": "Your blog has been an inspiration for my own writing. Keep up the great work!"
+        },
+        {
+            "commentid": 16,
+            "postId": 1,
+            "name": "Julia Kim",
+            "email": "julia.kim@example.com",
+            "body": "I love the way you approach this topic. Your posts are always so well thought out!"
+        },
+        {
+            "commentid": 17,
+            "postId": 1,
+            "name": "David Lee",
+            "email": "david.lee@example.com",
+            "body": "I always learn something new from your posts. Thanks for sharing your knowledge!"
+        },
+        {
+            "commentid": 18,
+            "postId": 1,
+            "name": "Susan Taylor",
+            "email": "susan.taylor@example.com",
+            "body": "Your writing always makes me stop and think. Keep up the great work!"
+        },
+        {
+            "commentid": 19,
+            "postId": 1,
+            "name": "Jason Brown",
+            "email": "jason.brown@example.com",
+            "body": "I've shared your post with all my friends. It's sparked some great discussions!"
+        },
+        {
+            "commentid": 20,
+            "postId": 1,
+            "name": "Sarah Kim",
+            "email": "sarah.kim@example.com",
+            "body": "Your blog is one of my favorites. Thanks for sharing your thoughts and insights!"
         }
     ],
     "albums": [
         {
             "albumId": 1,
             "title": "Vacation Photos",
+            "userId": 1,
             "images": [
                 {
                     "id": 1,
@@ -640,6 +751,7 @@
         {
             "albumId": 2,
             "title": "Vacation Photos",
+            "userId": 2,
             "images": [
                 {
                     "id": 1,
@@ -671,6 +783,7 @@
         {
             "albumId": 3,
             "title": "Vacation Photos",
+            "userId": 3,
             "images": [
                 {
                     "id": 1,
@@ -702,6 +815,7 @@
         {
             "albumId": 4,
             "title": "Vacation Photos",
+            "userId": 4,
             "images": [
                 {
                     "id": 1,
@@ -733,6 +847,7 @@
         {
             "albumId": 5,
             "title": "Vacation Photos",
+            "userId": 5,
             "images": [
                 {
                     "id": 1,
@@ -764,6 +879,7 @@
         {
             "albumId": 6,
             "title": "Vacation Photos",
+            "userId": 6,
             "images": [
                 {
                     "id": 1,
@@ -795,6 +911,7 @@
         {
             "albumId": 7,
             "title": "Vacation Photos",
+            "userId": 7,
             "images": [
                 {
                     "id": 1,
@@ -826,6 +943,7 @@
         {
             "albumId": 8,
             "title": "Vacation Photos",
+            "userId": 8,
             "images": [
                 {
                     "id": 1,
@@ -857,6 +975,7 @@
         {
             "albumId": 9,
             "title": "Vacation Photos",
+            "userId": 9,
             "images": [
                 {
                     "id": 1,
@@ -888,6 +1007,7 @@
         {
             "albumId": 10,
             "title": "Vacation Photos",
+            "userId": 10,
             "images": [
                 {
                     "id": 1,
