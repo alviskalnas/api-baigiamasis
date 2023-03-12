@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -23,16 +24,16 @@ const Header = () => {
       </div>
       <nav>
         <ul>
-          <li>
+          <li className={location.pathname === '/' ? 'active' : ''}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className={location.pathname === '/users' ? 'active' : ''}>
             <Link to="/users">Users</Link>
           </li>
-          <li>
+          <li className={location.pathname === '/users-posts' ? 'active' : ''}>
             <Link to="/users-posts">Posts</Link>
           </li>
-          <li>
+          <li className={location.pathname === '/users-albums' ? 'active' : ''}>
             <Link to="/users-albums">Gallery</Link>
           </li>
         </ul>
@@ -42,3 +43,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const UsersPostsPage = () => {
   const [posts, setPosts] = useState([]);
@@ -14,7 +15,9 @@ const UsersPostsPage = () => {
         const usersResponse = await axios.get('http://localhost:3000/users');
         setUsers(usersResponse.data);
       } catch (error) {
-        console.log(error);
+        return (
+          <div>Error: {error.message}</div>
+        );
       }
     };
 
@@ -32,7 +35,7 @@ const UsersPostsPage = () => {
             <li key={key}>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
-              <p>Posted by: {user ? user.name : 'Unknown User'}</p>
+              <p>Posted by: {user ? <Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link> : 'Unknown User'}</p>
             </li>
           );
         })}
@@ -42,3 +45,4 @@ const UsersPostsPage = () => {
 };
 
 export default UsersPostsPage;
+

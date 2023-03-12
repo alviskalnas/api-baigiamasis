@@ -5,27 +5,18 @@ import './api-main.scss';
 
 const NewApi = () => {
   const [users, setUsers] = useState([]);
+  const [userPosts, setUserPosts] = useState([]);
 
   useEffect(() => {
     axios.get('http://localhost:3000/users')
       .then(res => {
         setUsers(res.data);
       })
-      .catch(error => {
-        console.log(error);
-      });
-  }, []);
 
-  const [userPosts, setUserPosts] = useState([]);
-
-  useEffect(() => {
     axios.get('http://localhost:3000/posts')
       .then(res => {
         setUserPosts(res.data);
       })
-      .catch(error => {
-        console.log(error);
-      });
   }, []);
 
   const getUserPostsCount = (id) => {
@@ -40,8 +31,8 @@ const NewApi = () => {
           const userPostsCount = getUserPostsCount(user.id);
           return (
             <li key={index}>
-              <Link to={`/user/${user.id}`}>
-                {user.name} ({userPostsCount} posts)
+              <Link to={`/users/${user.id}`}>
+                {user.name} {user.surname} ({userPostsCount} posts)
               </Link>
             </li>
           );
@@ -52,6 +43,11 @@ const NewApi = () => {
 }
 
 export default NewApi;
+
+
+
+
+
 
 
 
