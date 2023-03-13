@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './users-posts-page.scss';
 
 const UsersPostsPage = () => {
   const [posts, setPosts] = useState([]);
@@ -27,12 +28,12 @@ const UsersPostsPage = () => {
   return (
     <div className="main-users-posts">
       <h1>Users Posts Page</h1>
-      <ul>
+      <ul className="posts-list">
         {posts.map(post => {
           const user = users.find(user => user.id === post.userId);
           const key = `${post.id}-${Math.random()}`;
           return (
-            <li key={key}>
+            <li className="post" key={key}>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
               <p>Posted by: {user ? <Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link> : 'Unknown User'}</p>

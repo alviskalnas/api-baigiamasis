@@ -1,7 +1,70 @@
 .users-main-page {
     margin-top: 80px;
-}
-img {
-    width: 100px;
-    height: 100px;
+
+    .users-posts-albums {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(100% - 60px);
+
+        .users-posts {
+
+            flex: 0 0 50%;
+            display: inline;
+            margin-bottom: 20px;
+            border-bottom: solid;
+
+            h3 {
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-family: sans-serif;
+                }
+
+            }
+
+            .first-posts {
+                padding: 0 60px 0 0;
+
+                h4 {
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-family: sans-serif;
+                    }
+                }
+
+                h5 {
+                    text-decoration: none;
+                    color: #333;
+                    font-family: serif;
+                }
+
+                p {
+                    font-family: monospace;
+                    display: inline-block;
+                    width: 80%;
+                    vertical-align: middle;
+                }
+
+            }
+
+            .first-albums {
+                h4 {
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-family: sans-serif;
+                    }
+
+                }
+
+                p {
+                    color: #333;
+                    font-family: monospace;
+                }
+            }
+        }
+    }
+
 }

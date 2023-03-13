@@ -1,0 +1,32 @@
+.main-users-albums-con {
+    margin-top: 80px;
+
+    .user-albums-con {
+        li {
+            display: inline;
+            margin-bottom: 30px;
+
+            h3 {
+                margin-top: 70px;
+                a {
+                    
+                    text-decoration: none;
+                    color: #1233c4;
+                }
+
+            }
+
+            .album-con {
+                h4 {
+                    font-family: monospace;
+                    color: #333;
+                }
+
+                a {
+                    padding: 20px;
+                }
+            }
+        }
+
+    }
+}

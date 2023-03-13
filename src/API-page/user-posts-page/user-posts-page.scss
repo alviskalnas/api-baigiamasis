@@ -1,0 +1,20 @@
+.user-posts-page {
+    margin-top: 80px;
+    width: calc(100%);
+
+    h1 {}
+
+    .posts-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(100% - 60px);
+
+        .user-post-con {
+            flex: 0 0 50%;
+            display: inline;
+            margin-bottom: 20px;
+            border-bottom: solid;
+        }
+    }
+}

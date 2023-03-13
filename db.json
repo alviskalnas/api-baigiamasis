@@ -22,10 +22,7 @@
                 "name": "Acme Corporation",
                 "catchPhrase": "Paversti pasauli grazesniu",
                 "hoby": "Software development"
-            },
-            "albumId": [
-                1
-            ]
+            }
         },
         {
             "id": 2,
@@ -49,10 +46,8 @@
                 "name": "Skalbykla",
                 "catchPhrase": "Kad viskas butu svaru",
                 "hoby": "Skalbimo zinove"
-            },
-            "albumId": [
-                2
-            ]
+            }
+          
         },
         {
             "id": 3,
@@ -76,10 +71,7 @@
                 "name": "mechanikas",
                 "catchPhrase": "Negerai, parejus granata",
                 "hoby": "automobiliu taisymas"
-            },
-            "albumId": [
-                3
-            ]
+            }
         },
         {
             "id": 4,
@@ -103,10 +95,7 @@
                 "name": "Siuveja",
                 "catchPhrase": "Galiu kuom padet?",
                 "hoby": "krepsinis"
-            },
-            "albumId": [
-                4
-            ]
+            }
         },
         {
             "id": 5,
@@ -130,10 +119,7 @@
                 "name": "Sekretore",
                 "catchPhrase": "Viskas gerai su tais popieriais",
                 "hoby": "Sachmatai"
-            },
-            "albumId": [
-                5
-            ]
+            }
         },
         {
             "id": 6,
@@ -157,10 +143,7 @@
                 "name": "Sandelininkas",
                 "catchPhrase": "Gal turite klausimu?",
                 "hoby": "Grybavimas"
-            },
-            "albumId": [
-                6
-            ]
+            }
         },
         {
             "id": 7,
@@ -184,10 +167,7 @@
                 "name": "Mokytojas",
                 "catchPhrase": "Viskas gerai, kas gerai baigiasi",
                 "hoby": "Kryziazodziai"
-            },
-            "albumId": [
-                7
-            ]
+            }
         },
         {
             "id": 8,
@@ -211,10 +191,7 @@
                 "name": "Nare profesionale",
                 "catchPhrase": "Nera blogo oro, yra bloga apranga",
                 "hoby": "Keliones"
-            },
-            "albumId": [
-                8
-            ]
+            }
         },
         {
             "id": 9,
@@ -238,10 +215,7 @@
                 "name": "Gyvunu prieglaudos direktorius",
                 "catchPhrase": "Visada visiems padeti",
                 "hoby": "Maratonai"
-            },
-            "albumId": [
-                9
-            ]
+            }
         },
         {
             "id": 10,
@@ -265,280 +239,277 @@
                 "name": "Statybininkas",
                 "catchPhrase": "Tept slept ir viskas",
                 "hoby": "Medziokle"
-            },
-            "albumId": [
-                10
-            ]
+            }
         }
     ],
     "posts": [
         {
             "userId": 1,
-            "postId": 1,
+            "id": 1,
             "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, velit vel elementum varius, dolor nibh accumsan enim, in tristique dui justo eu arcu. Aliquam ullamcorper sollicitudin nibh, in fringilla eros cursus eget. Aliquam id tristique justo. Maecenas mollis et erat in vestibulum. Sed maximus mattis est, interdum egestas massa feugiat eget. Integer euismod pellentesque arcu, eget consequat ipsum dictum in. Integer auctor eleifend mauris, aliquam dapibus nisl euismod vel. Morbi sollicitudin sem a metus rutrum, ac pellentesque diam vestibulum. Duis ac dolor nibh. Maecenas pretium luctus sapien, eget mattis sapien. Fusce suscipit arcu nec lacus pharetra, ac blandit dui laoreet. In vulputate, risus vitae rutrum laoreet, libero nulla mollis nisl, ac lobortis arcu arcu fermentum nisl. Aliquam ac lacus pretium lectus dictum bibendum fermentum eget orci. Proin tempus, tortor a ultricies elementum, ex massa iaculis est, vel rhoncus urna odio et massa."
         },
         {
             "userId": 1,
-            "postId": 2,
+            "id": 2,
             "title": "Phasellus luctus orci sit amet augue auctor, sit amet ultricies sapien egestas.",
             "body": "Donec facilisis magna et libero blandit laoreet. Pellentesque mauris lorem, hendrerit sed molestie sit amet, tempor at velit. In ultrices eleifend sagittis. Nulla aliquet dolor porttitor viverra posuere. Proin sit amet justo in lacus vestibulum interdum. Sed placerat rutrum purus, sed ultricies sapien ullamcorper id. Phasellus pretium elementum erat, ac volutpat quam tempor vel. In in quam eu magna convallis iaculis. Etiam euismod accumsan tristique. Phasellus imperdiet porttitor massa vel feugiat. Nullam congue, nulla vitae euismod luctus, elit orci condimentum nisl, eget fermentum eros lectus at est. Vivamus orci urna, facilisis at est a, maximus aliquet urna. Donec vel enim condimentum, iaculis purus imperdiet, lobortis odio."
         },
         {
             "userId": 1,
-            "postId": 3,
+            "id": 3,
             "title": "Fusce non metus et est finibus pretium.",
             "body": "Donec sit amet justo non nisi vestibulum mattis. Nunc in sapien sit amet eros fringilla fringilla ac id lectus. Aliquam erat volutpat. Phasellus quis dolor sodales, rhoncus diam id, tempor tortor. Sed blandit nisl fringilla, finibus sapien id, consectetur tortor. Nullam lobortis accumsan lectus, id ultricies dui auctor sit amet. Pellentesque pretium posuere odio, facilisis lobortis ante eleifend non. Etiam felis mi, gravida sit amet neque condimentum, porta tincidunt purus. Vivamus viverra odio sit amet mauris vehicula, eu faucibus nulla pharetra. Phasellus faucibus est et lacinia pulvinar. Proin tristique nibh quis metus pretium bibendum. Morbi fringilla augue nec lectus iaculis dignissim. Pellentesque tincidunt lobortis euismod. Vivamus convallis urna a tincidunt dapibus. Pellentesque rutrum vitae leo non tristique. Proin tincidunt finibus venenatis."
         },
         {
             "userId": 1,
-            "postId": 4,
+            "id": 4,
             "title": "Donec bibendum lacus non consequat mattis.",
             "body": "Cras mollis nulla eget commodo vehicula. Curabitur non massa non odio viverra vulputate eu in augue. Mauris lacinia nulla turpis, sed placerat ipsum elementum nec. Duis aliquam sit amet nulla id fermentum. Duis tincidunt blandit arcu nec efficitur. Nulla egestas dapibus augue, vitae venenatis risus vulputate sit amet. In dictum tristique consectetur. Maecenas volutpat orci quis neque maximus elementum. Duis sed ipsum tincidunt, cursus augue sed, fringilla elit. Phasellus pretium finibus velit eget ornare. Sed quam diam, tempor sed nisl ut, posuere accumsan justo."
         },
         {
             "userId": 1,
-            "postId": 5,
+            "id": 5,
             "title": "Donec et dolor et massa elementum fringilla.",
             "body": "Sed non pretium nisl, in elementum eros. Sed porttitor lectus sit amet molestie fringilla. Donec accumsan blandit nisi, non maximus quam tempor in. Duis semper ultricies felis, vel feugiat nisi faucibus at. Vestibulum accumsan tortor nec turpis malesuada, non congue dolor commodo. Pellentesque sed lacus vitae tortor rutrum ultricies. Vestibulum pellentesque orci eros, ultricies vulputate lorem aliquet ut. Integer eget ligula laoreet nisl cursus tempor ut ac nunc. Quisque quis lacinia arcu, blandit bibendum neque. Nam at nibh enim. Proin sit amet porttitor lectus. Proin id eros velit. Quisque aliquet urna ut lacus pharetra pulvinar. Sed faucibus ipsum eu velit efficitur, nec posuere enim eleifend."
         },
         {
             "userId": 2,
-            "postId": 1,
+            "id": 1,
             "title": "Proin accumsan libero ut purus euismod commodo.",
             "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat nisi, facilisis sed porta sed, lobortis quis neque. Vivamus tempus rutrum varius. In sagittis molestie tristique. Nullam maximus, justo quis euismod ultricies, mi lorem euismod lacus, sed varius magna est at nunc. Cras fringilla urna at ipsum molestie malesuada. Nullam efficitur, dolor vel pharetra luctus, mi metus efficitur odio, vitae sodales lectus nulla a neque. Etiam et erat sed arcu imperdiet tincidunt."
         },
         {
             "userId": 2,
-            "postId": 2,
+            "id": 2,
             "title": "Maecenas in lorem sit amet tellus dapibus mattis.",
             "body": "Praesent sit amet ultricies erat. Praesent ut neque et ipsum varius sollicitudin vitae in augue. Sed sollicitudin mauris mauris, eget ornare enim aliquam eu. Fusce nisi purus, suscipit eu dui quis, pretium dictum ante. Aliquam sollicitudin rutrum odio, lobortis ornare diam viverra at. Praesent rhoncus sem in eros facilisis, sollicitudin varius metus pulvinar. Curabitur pretium sed dui vel convallis. Praesent finibus aliquam mi. Praesent ornare quis ante a dignissim. Sed placerat porttitor nibh, ut lobortis lorem auctor eu. Vivamus elit nibh, vulputate ac vestibulum sit amet, malesuada non leo. Nulla scelerisque dapibus augue id lobortis. Aliquam ut porttitor eros, eu consectetur libero. Mauris nec cursus nisl. Quisque congue, arcu eu interdum cursus, ipsum turpis suscipit felis, varius rutrum tellus urna in erat. Suspendisse posuere risus est, in semper nunc aliquam a."
         },
         {
             "userId": 2,
-            "postId": 3,
+            "id": 3,
             "title": "Pellentesque dapibus ipsum eget ultrices placerat.",
             "body": "Nullam egestas odio accumsan purus luctus, quis elementum sapien tristique. Maecenas id consectetur quam, sit amet fringilla ex. Quisque vitae eros tempor, iaculis nunc ut, ultrices eros. Nulla orci libero, ornare eu interdum id, efficitur in orci. Suspendisse interdum arcu quis velit eleifend, a interdum dui porta. Donec blandit consectetur est sit amet sollicitudin. Maecenas non turpis blandit, venenatis erat vitae, maximus mi. Aenean commodo justo feugiat justo dignissim, eget feugiat diam malesuada. Sed venenatis, quam venenatis interdum posuere, purus massa ultricies elit, ac fermentum nisl nisl ac magna."
         },
         {
             "userId": 2,
-            "postId": 4,
+            "id": 4,
             "title": "Vestibulum a mauris eget tellus iaculis interdum.",
             "body": "Mauris iaculis tortor non nisi pharetra, non aliquam quam ultrices. Curabitur sit amet diam augue. Donec gravida odio nec magna tristique tempor. Nam eget auctor ante. Pellentesque sit amet magna ut nibh lobortis bibendum sit amet in augue. Donec metus mauris, luctus sit amet ullamcorper mattis, iaculis eu quam. Nam tempus luctus nisl vitae viverra. Nam iaculis lectus nec fringilla tempor."
         },
         {
             "userId": 2,
-            "postId": 5,
+            "id": 5,
             "title": "Nunc aliquam eros sodales turpis consectetur, tincidunt tempor leo tristique.",
             "body": "Aenean non dolor sed ante eleifend tristique et sed magna. Aenean a purus interdum, rhoncus lacus tristique, viverra risus. Pellentesque at feugiat nunc, quis placerat elit. Morbi vitae elementum sapien, et venenatis ligula. Suspendisse ante nulla, dapibus eget lacinia et, lacinia quis turpis. Cras mi lectus, tincidunt sit amet tellus vel, pellentesque tempus ligula. Duis finibus, est a blandit porttitor, lorem elit placerat velit, et fringilla diam arcu non purus. Donec semper, urna et ullamcorper rhoncus, mi neque sollicitudin ligula, vel laoreet leo risus vitae arcu. Praesent lacinia pharetra nunc sit amet scelerisque. Morbi magna justo, iaculis et cursus sit amet, faucibus in quam. Fusce sodales faucibus aliquet."
         },
         {
             "userId": 3,
-            "postId": 1,
+            "id": 1,
             "title": "Sed vitae augue luctus, auctor nunc nec, finibus est.",
             "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu venenatis dui. Fusce a bibendum libero, sed pellentesque mauris. Suspendisse finibus, nulla eget aliquam cursus, eros purus commodo massa, nec fringilla odio ex ac erat. Aliquam consequat consequat nunc ut euismod. Curabitur varius lectus sit amet nisl vestibulum, vitae pellentesque velit tristique. Suspendisse sapien ligula, tristique a molestie vel, laoreet in arcu. Suspendisse potenti. Donec ultricies tincidunt diam. Duis pharetra eros nunc, eu elementum libero iaculis vel. Morbi viverra, arcu eget ornare tempor, orci dolor consectetur enim, at hendrerit est nisl maximus purus. Mauris a nisi auctor, laoreet mi et, convallis nisl. Donec eu consequat tellus, at tincidunt justo. Suspendisse auctor lacus sapien, ut porta lorem mollis in. Nulla vel vestibulum lorem. Vestibulum lorem sapien, dictum ac accumsan vitae, imperdiet non risus. Donec nec consectetur leo."
         },
         {
             "userId": 3,
-            "postId": 2,
+            "id": 2,
             "title": "Curabitur commodo ipsum ut lacus volutpat, vel mattis tortor tristique.",
             "body": "Curabitur bibendum varius fermentum. Morbi lacinia magna orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In mollis velit et dictum laoreet. Curabitur vulputate ut magna in luctus. In sagittis pharetra varius. In maximus porta sollicitudin. Nam efficitur tellus in ex sollicitudin, eget scelerisque nulla aliquam. Maecenas aliquet ipsum ac arcu tincidunt rhoncus. Sed varius lacinia consectetur. Morbi orci nibh, viverra at egestas a, euismod ac dui."
         },
         {
             "userId": 3,
-            "postId": 3,
+            "id": 3,
             "title": "Praesent eget neque laoreet, hendrerit turpis a, tincidunt tortor.",
             "body": "Mauris finibus quis nisl sed consequat. Etiam consectetur fermentum dictum. Sed convallis elementum metus rhoncus blandit. Suspendisse ac enim fermentum, finibus ipsum ut, cursus urna. Sed non fringilla tortor. Pellentesque ipsum turpis, tincidunt eget aliquet in, luctus eget diam. Vestibulum eu gravida elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet enim ex. Quisque sollicitudin quis libero vel ultrices. Nam accumsan eget magna vel suscipit. Fusce laoreet nibh eget ipsum porta, nec accumsan risus viverra. Sed ac nisi urna. Donec placerat sapien augue, et eleifend felis tristique et."
         },
         {
             "userId": 3,
-            "postId": 4,
+            "id": 4,
             "title": "Morbi non eros ultricies, imperdiet magna id, interdum nibh.",
             "body": "Aenean laoreet molestie mollis. Fusce ultricies sodales finibus. Maecenas et faucibus neque. Integer condimentum sed felis sit amet bibendum. Phasellus et nunc ut leo euismod condimentum in at libero. Mauris sem augue, feugiat ac ex vitae, venenatis accumsan dui. Ut interdum sagittis venenatis. Aenean eu dignissim ipsum, eu luctus urna. Nullam vehicula nisi nunc, a consectetur erat tincidunt vel."
         },
         {
             "userId": 3,
-            "postId": 5,
+            "id": 5,
             "title": "Proin lacinia purus vulputate odio finibus, sit amet maximus velit lobortis.",
             "body": "Quisque sodales sagittis lacinia. Nam dolor justo, porta non euismod quis, pulvinar non odio. Praesent ac turpis arcu. Quisque feugiat urna eget ligula pharetra facilisis. Proin tellus velit, ultricies eu arcu ac, gravida convallis nulla. Phasellus vestibulum magna ac ullamcorper rhoncus. Phasellus vel interdum purus, eu fringilla dui. Suspendisse eleifend lacinia eleifend."
         },
         {
             "userId": 4,
-            "postId": 1,
+            "id": 1,
             "title": "Morbi ac libero ut massa rutrum iaculis.",
             "body": "Nulla pharetra mattis velit sit amet venenatis. Suspendisse dignissim eu neque pretium cursus. Etiam imperdiet aliquet cursus. Sed vestibulum felis id mattis rutrum. Ut libero nisi, aliquam pretium fermentum nec, condimentum id orci. Morbi interdum tellus efficitur, facilisis purus in, eleifend sem. Quisque efficitur nulla sit amet sodales imperdiet. Vivamus et venenatis velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean luctus, turpis et laoreet mattis, quam dui varius enim, in egestas mauris magna vitae sapien. Maecenas sed mauris ac neque lobortis luctus at nec lorem. Aliquam pulvinar non purus vel commodo. Donec eleifend velit sapien, nec dignissim ex commodo vitae. Vivamus non sodales tortor, nec aliquet tortor."
         },
         {
             "userId": 4,
-            "postId": 2,
+            "id": 2,
             "title": "Mauris eu dui posuere, tristique libero at, bibendum leo.",
             "body": "Ut ut mi lectus. Sed vel tincidunt magna, porttitor porta mauris. Proin rhoncus ex nec rhoncus malesuada. Nulla ullamcorper venenatis est, ullamcorper fringilla sapien commodo in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque in tristique dui, sed pellentesque urna. Etiam vitae dictum odio. Integer porta blandit felis non consectetur. Pellentesque sit amet libero ut enim tincidunt aliquam nec quis mauris. Nunc non maximus leo."
         },
         {
             "userId": 4,
-            "postId": 3,
+            "id": 3,
             "title": "Quisque varius diam a laoreet feugiat.",
             "body": "Donec non magna et libero euismod euismod nec sit amet nulla. Vestibulum ac dolor vulputate, imperdiet eros mattis, fermentum quam. Proin vestibulum nunc sed tempus efficitur. Proin eu leo id nisi convallis rhoncus nec nec nunc. Integer pretium id ipsum ut lobortis. Vivamus congue eget velit vel maximus. Integer ac nulla sed libero rutrum imperdiet id ut massa. Fusce fringilla arcu et lacus euismod porttitor quis a orci. Duis tincidunt vestibulum auctor. Nullam gravida tellus ipsum, ut placerat odio posuere in. Mauris risus nunc, consectetur nec velit sit amet, molestie maximus dolor. Aenean sagittis cursus sapien, a commodo massa tempus quis. Phasellus augue ligula, tempor a facilisis nec, imperdiet vestibulum velit."
         },
         {
             "userId": 4,
-            "postId": 4,
+            "id": 4,
             "title": "Ut nec justo lacinia, pellentesque magna a, facilisis lorem.",
             "body": "Nam blandit enim fringilla orci sodales, in maximus neque finibus. Duis at orci ac nunc convallis elementum at eu enim. Curabitur a dui mauris. Nullam in scelerisque ligula, eget congue sapien. Aliquam ut ultrices ligula. Cras facilisis suscipit faucibus. Cras aliquet placerat enim sed semper. Nullam bibendum nibh dignissim nisi interdum, eget aliquam metus mollis. Sed vitae sodales libero. Morbi faucibus ex vel sodales pulvinar. Mauris porttitor elementum ipsum ut iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"
         },
         {
             "userId": 4,
-            "postId": 5,
+            "id": 5,
             "title": "Praesent auctor urna nec faucibus malesuada.",
             "body": "Cras sed iaculis tortor. Nulla facilisi. Morbi ut egestas enim. Morbi ligula purus, aliquet ac justo vel, mattis gravida urna. Praesent turpis sapien, consectetur et dignissim sed, venenatis eget metus. Mauris nec ante id massa sollicitudin molestie eget et erat. Proin ut ipsum ut est suscipit tincidunt id non augue."
         },
         {
             "userId": 5,
-            "postId": 1,
+            "id": 1,
             "title": "Nam et ex finibus, mollis sem et, mollis magna.",
             "body": "Suspendisse placerat, risus sit amet lobortis pretium, lectus eros vestibulum nulla, vel ullamcorper nunc enim sit amet ipsum. Nam porttitor aliquet nunc vel blandit. In id est eget sapien luctus consequat. Mauris tristique tortor at urna fringilla aliquet. Sed vel dapibus nunc, sit amet dignissim ante. Etiam nisi est, imperdiet at est sed, porta mollis neque. Cras eu mauris faucibus, posuere felis nec, blandit dolor. Suspendisse sit amet arcu et dolor viverra tempor."
         },
         {
             "userId": 5,
-            "postId": 2,
+            "id": 2,
             "title": "Etiam vehicula massa id risus volutpat hendrerit.",
             "body": "Aliquam pretium, magna quis rhoncus pretium, orci justo feugiat metus, molestie feugiat ligula leo eget ante. Quisque viverra neque ante, id dignissim velit tincidunt non. Nulla nisi tellus, ullamcorper a luctus ut, imperdiet quis mauris. Aenean tincidunt magna velit, vel consequat lacus pharetra sit amet. Fusce tincidunt volutpat risus, non commodo arcu fringilla eget. Curabitur eu quam massa. Quisque gravida venenatis ante, tincidunt commodo purus. Proin augue nisi, venenatis nec ipsum vitae, bibendum cursus ligula. Nunc libero tortor, blandit non ex a, auctor mollis orci. Nullam tempor sapien ac dignissim accumsan. Maecenas pharetra augue risus."
         },
         {
             "userId": 5,
-            "postId": 3,
+            "id": 3,
             "title": "Morbi sed nisi vel libero ullamcorper porta vitae et dolor.",
             "body": "Nullam mi orci, pretium sit amet mi quis, aliquet interdum orci. Donec accumsan tincidunt nisi eu eleifend. Vivamus sed ipsum vitae lacus iaculis cursus sit amet eget nisi. Ut suscipit tortor at risus lacinia, eu pharetra neque feugiat. Phasellus venenatis lacus eget lectus posuere ultricies. Sed imperdiet tincidunt eros ac feugiat. Maecenas pretium mi eu purus consequat hendrerit. Sed vehicula, orci sit amet vestibulum cursus, tortor massa porttitor leo, aliquam porttitor quam ante ut libero. Nunc vel pretium orci, sit amet pulvinar leo."
         },
         {
             "userId": 5,
-            "postId": 4,
+            "id": 4,
             "title": "Duis eleifend arcu ac metus commodo, sit amet euismod ante maximus.",
             "body": "Etiam non nunc vitae neque blandit finibus non id ligula. Ut nec euismod quam, nec efficitur odio. Nullam nisi quam, lobortis ut tortor quis, ultrices placerat mi. Aliquam erat volutpat. Aliquam dignissim hendrerit magna, vitae rhoncus orci placerat a. Sed fermentum massa massa, et faucibus metus imperdiet non. Donec congue massa id porta ultricies. Sed id elit et mi volutpat imperdiet. Duis eleifend leo lorem, a ornare metus porta id. Nulla quis ante ut metus suscipit euismod eget eget tellus. Sed a velit posuere, ultricies lorem nec, auctor sem. Donec eget orci feugiat, iaculis erat at, lobortis leo."
         },
         {
             "userId": 5,
-            "postId": 5,
+            "id": 5,
             "title": "Aenean sed mauris consequat, pellentesque quam in, finibus diam.",
             "body": "Donec fermentum vel nunc id sagittis. Vivamus id velit eget sem pretium vehicula. Sed molestie leo bibendum dictum convallis. Suspendisse vitae diam at nulla finibus mollis. Duis consequat elementum congue. Nullam quam purus, ornare ut aliquet ut, congue sit amet purus. Cras ex magna, pulvinar in molestie vel, sollicitudin ut leo. Maecenas in erat tellus. Nunc ornare lacus turpis, id dictum metus venenatis ultricies. Morbi aliquam mollis nisl a blandit. Phasellus mollis massa a erat ullamcorper, at fringilla arcu varius. Mauris sollicitudin vulputate lorem auctor aliquet. Nunc gravida fringilla tincidunt. Integer in dolor vel diam euismod aliquam. Quisque sed convallis augue, sed auctor ipsum. Suspendisse pharetra facilisis dignissim."
         },
         {
             "userId": 6,
-            "postId": 1,
+            "id": 1,
             "title": "Suspendisse id odio ullamcorper arcu placerat lobortis.",
             "body": "Sed et congue eros. Sed libero ex, luctus id egestas congue, fringilla vel lorem. Proin vel tellus purus. Vivamus orci enim, sodales dictum augue vitae, elementum iaculis nunc. Vestibulum nec vehicula nibh. Quisque accumsan at magna quis porta. Vivamus tincidunt dignissim consequat. Morbi dictum massa odio, nec semper tellus vehicula eget. Vestibulum vulputate quam est, ut fringilla diam efficitur nec. Proin consequat ex ut porta tempor."
         },
         {
             "userId": 6,
-            "postId": 2,
+            "id": 2,
             "title": "Donec sit amet lectus vel est porttitor accumsan.",
             "body": "Morbi at gravida lacus. Aliquam nec quam rhoncus, efficitur est ac, eleifend dolor. Nam pulvinar, augue vel accumsan sagittis, arcu lorem tincidunt turpis, sed auctor neque purus id velit. Mauris interdum gravida sem a ultrices. Aliquam et convallis dui, sed viverra velit. Maecenas rutrum leo nec lectus pulvinar aliquet. Nullam ornare, urna vitae laoreet faucibus, nulla neque faucibus lectus, ac ultrices libero mauris id justo."
         },
         {
             "userId": 6,
-            "postId": 3,
+            "id": 3,
             "title": "Cras imperdiet enim id nisl ultrices, nec tempor dui convallis.",
             "body": "Suspendisse molestie rhoncus placerat. Etiam ut erat eu risus dignissim suscipit ut vel nulla. Sed convallis ornare leo sed consectetur. Vestibulum dapibus ligula volutpat est molestie tempor. Suspendisse rutrum metus id justo cursus, at mattis nisi fringilla. Aliquam molestie nibh ac libero tempor, ut volutpat tortor tempus. In hac habitasse platea dictumst."
         },
         {
             "userId": 6,
-            "postId": 4,
+            "id": 4,
             "title": "Proin et magna laoreet ipsum lobortis egestas a eget nibh.",
             "body": "Fusce et justo at sem sodales lobortis. Curabitur tempor sem a nisl suscipit, eget ultricies nunc vestibulum. Quisque mattis semper lectus, sed maximus sapien tempor ac. Sed tempor ex ac felis lobortis, vitae sodales turpis eleifend. Phasellus malesuada, orci quis mattis iaculis, lorem mi porta enim, a iaculis neque sem eget eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ultricies volutpat congue. In enim sapien, viverra sit amet turpis ut, scelerisque sollicitudin ligula. Proin ac ultricies purus, non faucibus dui. Cras euismod ornare feugiat. Donec tincidunt magna ut urna commodo, a pulvinar ante vestibulum. Praesent iaculis mi vitae risus semper accumsan. Etiam pretium fermentum tellus, id porttitor mi facilisis sit amet. Ut sodales vehicula nulla vel auctor."
         },
         {
             "userId": 6,
-            "postId": 5,
+            "id": 5,
             "title": "Integer tincidunt risus vitae felis eleifend maximus.",
             "body": "Curabitur auctor condimentum sodales. Morbi eleifend sapien in libero commodo finibus. Donec sed massa imperdiet, vehicula eros et, viverra elit. Phasellus pharetra, mi nec auctor rutrum, elit ante iaculis felis, sed pellentesque dui justo non sapien. Vivamus rhoncus mattis sapien, vel ultricies elit. Aliquam blandit, elit in luctus porttitor, diam velit tempus quam, vel ullamcorper nibh leo eu nisl. Fusce a vehicula libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
             "userId": 7,
-            "postId": 1,
+            "id": 1,
             "title": "Sed in ex non metus tincidunt congue vitae id leo.",
             "body": "Curabitur molestie ullamcorper purus eu scelerisque. Fusce egestas scelerisque porta. Morbi mollis, neque et porttitor hendrerit, nibh lectus ultrices nisi, ut rhoncus magna orci tincidunt dolor. Nam elementum neque quis mauris efficitur euismod pellentesque vel risus. Aenean a nibh in est mattis efficitur. Nulla facilisi. Nam ut sapien a dolor tristique aliquet. Nunc eget leo rutrum, dapibus massa vel, volutpat augue. Proin enim enim, euismod nec tristique at, sollicitudin quis nulla."
         },
         {
             "userId": 7,
-            "postId": 2,
+            "id": 2,
             "title": "Vestibulum viverra leo id arcu varius semper.",
             "body": "Vestibulum euismod blandit nunc id euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sed aliquet nibh. Sed ut eleifend lorem. Nullam nec semper nibh, sodales consectetur dolor. Nullam sit amet nisl augue. Duis mollis elementum maximus. Aenean vitae dolor ultrices, commodo sem vitae, ultricies eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
         },
         {
             "userId": 7,
-            "postId": 3,
+            "id": 3,
             "title": "Donec efficitur odio non tristique cursus.",
             "body": "Quisque in enim urna. Suspendisse at rhoncus est. Nam tristique arcu bibendum odio hendrerit, ac molestie mi aliquet. Aenean ornare accumsan turpis, quis consequat mauris porttitor non. Mauris tincidunt aliquet lectus in interdum. Aenean ut orci neque. Etiam eget magna fringilla, sollicitudin dui id, lobortis tortor. Quisque vulputate tortor ac ipsum laoreet, eu eleifend tellus commodo. Maecenas aliquam vehicula ultrices. Nam in ligula ac mauris mollis lobortis sed id ex."
         },
         {
             "userId": 7,
-            "postId": 4,
+            "id": 4,
             "title": "Aenean sed turpis mattis, luctus mi non, fermentum tellus.",
             "body": "Ut et justo elit. Nam iaculis elit enim, sed consequat metus venenatis non. Duis non neque porttitor, lobortis arcu sed, suscipit libero. Duis turpis justo, posuere ac dolor in, placerat consectetur arcu. Cras ipsum neque, tempus at tortor vel, dapibus tincidunt purus. Fusce semper mauris vitae interdum pulvinar. Nam a convallis purus. Cras augue erat, viverra a elementum quis, scelerisque nec ex. Aenean porttitor imperdiet tellus, id posuere erat consectetur eget."
         },
         {
             "userId": 7,
-            "postId": 5,
+            "id": 5,
             "title": "Morbi quis eros sit amet orci congue congue at ut justo.",
             "body": "Phasellus eget posuere odio. Donec ut ex in ante aliquet ultrices id a ligula. Curabitur in ullamcorper felis. Aenean blandit, est sit amet sagittis luctus, diam magna tincidunt lacus, vitae bibendum mi est tincidunt nisi. Sed aliquam, mi ut euismod ultrices, diam urna porta eros, id consectetur tortor urna eget libero. Sed sagittis nunc vitae commodo aliquam. Aenean euismod neque ac odio vehicula, id vestibulum leo posuere."
         },
         {
             "userId": 8,
-            "postId": 1,
+            "id": 1,
             "title": "Mauris condimentum sapien nec urna condimentum congue euismod eu erat.",
             "body": "Mauris pulvinar neque ex, tempor commodo nibh aliquam quis. Ut a odio nisl. Donec varius lorem vitae diam iaculis, id condimentum mauris pharetra. Sed luctus semper nisl, et elementum augue pharetra a. Duis sagittis euismod velit, vitae maximus turpis mattis in. Suspendisse blandit ut quam quis ultrices. Vivamus consectetur tellus id elementum scelerisque. Ut iaculis efficitur ligula, sit amet dignissim quam semper et. Aenean facilisis pellentesque tellus, in varius sem pulvinar non. Donec auctor velit id mi maximus, in vulputate lorem auctor. Proin auctor, magna eget tristique pellentesque, arcu quam vestibulum neque, nec placerat nunc diam sit amet enim."
         },
         {
             "userId": 8,
-            "postId": 2,
+            "id": 2,
             "title": "Ut sit amet nulla et erat placerat scelerisque et id erat.",
             "body": "In rutrum neque id pulvinar gravida. Vestibulum eget sapien mollis, convallis justo eget, blandit felis. Proin mattis, nisl eu porttitor dignissim, quam sapien scelerisque libero, ornare fringilla diam nulla quis enim. Vestibulum et ullamcorper nulla. Nunc placerat tempor purus nec pretium. Fusce id venenatis ligula. Proin consectetur est semper, ornare nunc non, imperdiet nibh. Nullam volutpat tincidunt facilisis. Aliquam eleifend risus enim, eget aliquet orci bibendum vitae. Pellentesque enim sem, pretium sed ligula at, pellentesque lacinia nisl."
         },
         {
             "userId": 8,
-            "postId": 3,
+            "id": 3,
             "title": "Integer fermentum ex id imperdiet lobortis.",
             "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ac ante vitae neque aliquam sodales pulvinar nec metus. Fusce malesuada mattis justo a fringilla. Mauris faucibus in leo sit amet porta. Aliquam blandit quis massa non rhoncus. Praesent ultricies, ante non molestie faucibus, enim urna luctus nulla, volutpat porta lectus est id sapien. Nunc facilisis sed neque eu malesuada. Integer feugiat consequat urna, sit amet blandit nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
         },
         {
             "userId": 8,
-            "postId": 4,
+            "id": 4,
             "title": "In quis mi at dui congue ornare sit amet in nulla.",
             "body": "Sed vulputate consequat turpis eu condimentum. Sed nisl dolor, sollicitudin at fermentum sit amet, egestas non tellus. Etiam dictum nulla sed pulvinar interdum. Suspendisse ut quam id eros convallis aliquam ac a neque. Vestibulum malesuada porttitor nibh. Ut sit amet enim ut nulla faucibus elementum in nec nulla. Suspendisse et urna at massa tempus lobortis et eu lorem. Pellentesque faucibus vestibulum lorem, ac venenatis tortor venenatis eu. Mauris porta porttitor porttitor. Sed pretium at nisl bibendum pharetra. In bibendum in nulla luctus pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
         },
         {
             "userId": 8,
-            "postId": 5,
+            "id": 5,
             "title": "Praesent accumsan dui ut mauris semper, ut tempus purus convallis.",
             "body": "Aenean ultrices dui pretium nisl dapibus, ut dapibus nisl tempus. In mollis ultrices quam at laoreet. In maximus urna a tellus condimentum fermentum. Donec venenatis sem eu mi pellentesque porttitor. Cras a mi sapien. Cras luctus in ipsum nec placerat. Etiam leo ex, pharetra et libero sit amet, rhoncus efficitur ante."
         },
         {
             "userId": 9,
-            "postId": 1,
+            "id": 1,
             "title": "Donec a mi non ex scelerisque pretium et ut justo.",
             "body": "Pellentesque sed risus sed diam suscipit elementum. Phasellus sollicitudin luctus urna, at accumsan odio pretium non. Duis tortor nulla, dignissim vel nunc eget, porta aliquam ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus aliquam ex sed ligula laoreet porta in id est. Suspendisse pulvinar varius lacus, et placerat felis pellentesque nec. Morbi et quam eget libero luctus semper. Suspendisse sed diam sed enim ultricies feugiat eget eu quam. Duis diam purus, maximus sit amet consequat vel, convallis eu enim. Cras porta at lectus sed consequat. Praesent porttitor nibh felis, vel auctor lorem auctor sed. Nulla a dapibus libero. Donec lacinia, ligula in dapibus cursus, erat lectus elementum leo, nec finibus nisi nisi et lorem. Sed fermentum dapibus ex eget suscipit. Proin dictum massa vel risus euismod, convallis tempus libero efficitur. Quisque augue purus, vehicula ac elit ut, ultrices finibus tortor."
         },
         {
             "userId": 9,
-            "postId": 2,
+            "id": 2,
             "title": "Suspendisse ut nunc fringilla quam faucibus faucibus.",
             "body": "Sed lacinia arcu leo, id efficitur est iaculis eget. Quisque non dolor mattis, consectetur magna eu, aliquam diam. Praesent vitae iaculis quam. Aenean purus libero, malesuada ut rhoncus vitae, finibus quis nisl. Phasellus vitae placerat massa. Pellentesque imperdiet hendrerit elit, a commodo sapien ullamcorper sit amet. In eu ultricies velit. Phasellus in mi porta, pulvinar eros ut, tristique nulla. Morbi ut sagittis nibh, eget cursus est."
         },
         {
             "userId": 9,
-            "postId": 3,
+            "id": 3,
             "title": "Integer euismod magna ac ligula aliquam, at scelerisque mauris pharetra.",
             "body": "Proin a auctor dolor. Proin commodo massa augue, rutrum interdum ex ultricies vitae. Aenean feugiat, tortor sed fermentum pretium, eros tortor laoreet nunc, nec hendrerit nulla ante eget neque. Duis ut accumsan lectus, vel rhoncus mi. Sed placerat pulvinar nisi, at ullamcorper felis rutrum eu. Cras blandit ex elit, sed condimentum odio tempus in. Suspendisse lacinia orci ut nisl vestibulum, sit amet lobortis nulla luctus. Quisque rhoncus erat in dolor consectetur, eget consectetur tellus cursus. Nullam elementum et lectus sed molestie. Sed in semper nisl. Pellentesque consectetur ligula ut magna euismod maximus. Aenean ligula diam, posuere nec posuere vitae, tincidunt et elit. Maecenas tempor, nulla id rutrum luctus, massa sapien pretium ipsum, quis imperdiet eros eros vitae sem. Etiam purus tortor, sollicitudin quis urna id, volutpat facilisis justo."
         },
         {
             "userId": 9,
-            "postId": 4,
+            "id": 4,
             "title": "Integer nec nunc tempor, blandit leo ac, malesuada erat.",
             "body": "Suspendisse ac bibendum magna. Vestibulum quam lorem, consectetur a metus id, suscipit euismod arcu. Vestibulum lectus diam, tempus at feugiat vel, commodo in diam. Integer vitae erat ut mauris gravida ultrices. Nam mollis interdum libero, sed vehicula sapien sollicitudin sit amet. In hac habitasse platea dictumst. Nulla finibus tellus vitae diam hendrerit, mollis faucibus augue porta. Vivamus in lorem placerat, egestas sem ac, euismod magna. Donec commodo mauris ut eros tincidunt iaculis."
         },
         {
             "userId": 9,
-            "postId": 5,
+            "id": 5,
             "title": "Sed non neque suscipit, convallis mauris id, rhoncus leo.",
             "body": "Praesent risus tortor, accumsan vehicula interdum eu, facilisis non orci. Pellentesque dignissim gravida tempor. Maecenas leo velit, venenatis faucibus nisl eu, mollis imperdiet lacus. Vestibulum quis risus ac tellus vestibulum ultrices nec eu lorem. Aenean a dapibus dolor. Nullam ante nisl, eleifend congue dignissim in, vehicula quis nisl. Suspendisse cursus aliquam magna, ut lobortis velit hendrerit ut. Vivamus euismod nec velit eget lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at est ac est ultricies egestas. Aliquam dictum ex a rhoncus ultrices. Suspendisse potenti."
         },
@@ -576,144 +547,40 @@
     "comments": [
         {
             "commentid": 1,
-            "postId": 1,
+            "id": 1,
             "name": "John Smith",
             "email": "johnsmith@example.com",
             "body": "Great post! Thanks for sharing your insights."
         },
         {
             "commentid": 2,
-            "postId": 1,
+            "id": 2,
             "name": "Jane Doe",
             "email": "janedoe@example.com",
             "body": "I couldn't agree more. Keep up the great work!"
         },
         {
             "commentid": 3,
-            "postId": 1,
+            "id": 3,
             "name": "Bob Johnson",
             "email": "bob.johnson@example.com",
             "body": "Interesting perspective. I'll have to think about this more."
         },
         {
             "commentid": 4,
-            "postId": 1,
+            "id": 4,
             "name": "Samantha Lee",
             "email": "samantha.lee@example.com",
             "body": "I love your writing style. Very engaging!"
         },
         {
             "commentid": 5,
-            "postId": 1,
+            "id": 5,
             "name": "Mike Davis",
             "email": "mike.davis@example.com",
             "body": "This is exactly what I needed to read today. Thanks for sharing!"
-        },
-        {
-            "commentid": 6,
-            "postId": 1,
-            "name": "Emily Johnson",
-            "email": "emily.johnson@example.com",
-            "body": "I've been struggling with this issue myself. Your post was very helpful!"
-        },
-        {
-            "commentid": 7,
-            "postId": 1,
-            "name": "Tom Brown",
-            "email": "tom.brown@example.com",
-            "body": "I've shared your post with my colleagues. It sparked some great discussions!"
-        },
-        {
-            "commentid": 8,
-            "postId": 1,
-            "name": "Karen Rodriguez",
-            "email": "karen.rodriguez@example.com",
-            "body": "Your insights are always so thought-provoking. Keep up the great work!"
-        },
-        {
-            "commentid": 9,
-            "postId": 1,
-            "name": "Dave Williams",
-            "email": "dave.williams@example.com",
-            "body": "I've been following your blog for a while now. Your posts never disappoint!"
-        },
-        {
-            "commentid": 10,
-            "postId": 1,
-            "name": "Linda Chen",
-            "email": "linda.chen@example.com",
-            "body": "This post is a great reminder of why I love reading your blog. Thanks for sharing!"
-        },
-        {
-            "commentid": 11,
-            "postId": 1,
-            "name": "Mark Wilson",
-            "email": "mark.wilson@example.com",
-            "body": "I found your post really insightful. Keep up the great work!"
-        },
-        {
-            "commentid": 12,
-            "postId": 1,
-            "name": "Rachel Hernandez",
-            "email": "rachel.hernandez@example.com",
-            "body": "Your writing is so clear and easy to understand. Thanks for sharing your knowledge!"
-        },
-        {
-            "commentid": 13,
-            "postId": 1,
-            "name": "Mark Thompson",
-            "email": "mark.thompson@example.com",
-            "body": "This post is a great example of why your blog is one of my favorites!"
-        },
-        {
-            "commentid": 14,
-            "postId": 1,
-            "name": "Rachel Perez",
-            "email": "rachel.perez@example.com",
-            "body": "Your insights always leave me thinking. Thanks for sharing!"
-        },
-        {
-            "commentid": 15,
-            "postId": 1,
-            "name": "Carlos Sanchez",
-            "email": "carlos.sanchez@example.com",
-            "body": "Your blog has been an inspiration for my own writing. Keep up the great work!"
-        },
-        {
-            "commentid": 16,
-            "postId": 1,
-            "name": "Julia Kim",
-            "email": "julia.kim@example.com",
-            "body": "I love the way you approach this topic. Your posts are always so well thought out!"
-        },
-        {
-            "commentid": 17,
-            "postId": 1,
-            "name": "David Lee",
-            "email": "david.lee@example.com",
-            "body": "I always learn something new from your posts. Thanks for sharing your knowledge!"
-        },
-        {
-            "commentid": 18,
-            "postId": 1,
-            "name": "Susan Taylor",
-            "email": "susan.taylor@example.com",
-            "body": "Your writing always makes me stop and think. Keep up the great work!"
-        },
-        {
-            "commentid": 19,
-            "postId": 1,
-            "name": "Jason Brown",
-            "email": "jason.brown@example.com",
-            "body": "I've shared your post with all my friends. It's sparked some great discussions!"
-        },
-        {
-            "commentid": 20,
-            "postId": 1,
-            "name": "Sarah Kim",
-            "email": "sarah.kim@example.com",
-            "body": "Your blog is one of my favorites. Thanks for sharing your thoughts and insights!"
         }
+     
     ],
     "albums": [
         {
