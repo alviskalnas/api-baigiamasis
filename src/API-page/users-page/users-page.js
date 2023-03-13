@@ -49,14 +49,15 @@ const UsersPage = () => {
           return (
             <li key={index}>
               <h3>
-              <Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link>
+                <Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link>
               </h3>
               {firstPost && (
                 <div>
                   <h4>
                     <Link to={`/users/${user.id}/posts`}>First post:</Link>
                   </h4>
-                  <p>{firstPost.title}</p>
+                  <h5>{firstPost.title}</h5>
+                  <p>{firstPost.body}</p>
                 </div>
               )}
               {firstAlbum && (

@@ -32,15 +32,16 @@ const UsersAlbums = () => {
           <li key={user.id}>
             <h3><Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link></h3>
             {albums.filter(album => album.userId === user.id).map(album => (
-              <div key={album.id}>
+              <div key={album.albumId}>
                 <h4>{album.title}</h4>
                 {album.images.map(image => (
-                  <Link to={`/users/${user.id}/albums/${album.id}/images/${image.id}`} key={image.id}>
-                    <img src={image.url} alt={image.id} />
+                  <Link to={`/users/${user.id}/albums/${album.albumId}/images/${image.id}`} key={image.id}>
+                    <img src={image.url} alt={`Album ${album.albumId} ${image.id}`} />
                   </Link>
                 ))}
               </div>
             ))}
+
           </li>
         ))}
       </ul>
@@ -49,6 +50,7 @@ const UsersAlbums = () => {
 };
 
 export default UsersAlbums;
+
 
 
 

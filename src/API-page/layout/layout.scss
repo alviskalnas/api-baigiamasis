@@ -1,0 +1,23 @@
+.layout-container {
+    .left-column {
+        .left {
+            width: calc(15% + 10px);
+            height: 100%;
+            position: fixed;
+            top: 80px;
+            bottom: 80px;
+            left: 0;
+        }
+    }
+
+    .right-column {
+        .right {
+            width: calc(15% + 10px);
+            right: 0;
+            position: fixed;
+            top: 80px;
+            bottom: 80px;
+            height: 100%;
+        }
+    }
+}
