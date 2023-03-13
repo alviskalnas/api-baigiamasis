@@ -31,7 +31,7 @@ const UserPage = () => {
   return (
     <div className="user-page-main">
       {user && (
-        <div>
+        <div className="user-info-page">
           <p>Name: {user.name}</p>
           <p>Surname: {user.surname}</p>
           <p>Username: {user.username}</p>
