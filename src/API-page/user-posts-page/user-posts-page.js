@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './user-posts-page.scss';
 
-const UserPosts = ({ userId, postId, user }) => {
+const UserPosts = ({ userId, user }) => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const postsResponse = await axios.get(`http://localhost:3000/posts?userId=${userId}`);
-        setPosts(postsResponse.data);
+        const { data: postsData } = await axios.get(`http://localhost:3000/posts?userId=${userId}`);
+        setPosts(postsData);
       } catch (error) {
         setError(error);
       }
@@ -19,30 +20,30 @@ const UserPosts = ({ userId, postId, user }) => {
     fetchData();
   }, [userId]);
 
-  const selectedPost = posts.find(post => post.id === Number(postId));
-
   if (error) {
     return <div>Error: {error.message}</div>;
   }
 
-  if (!selectedPost) {
-    return <div>Post not found.</div>;
-  }
-
   return (
     <div className="user-posts-page">
-      <h1>User Posts Page</h1>
-      <div>
-        <h2>{selectedPost.title}</h2>
-        <p>{selectedPost.body}</p>
-        <p>Posted by: {user ? `${user.name} ${user.surname}` : 'Unknown User'}</p>
-        <Link to={`/users/${userId}`}>Back to User Page</Link>
+      <h1>User Posts</h1>
+      <div className="posts-info">
+        {posts.map(post => (
+          <div className="user-post-con" key={post.id}>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p>
+            <p>Posted by: {user ? `${user.name} ${user.surname}` : 'Unknown User'}</p>
+            <Link to={`/users/${userId}/posts/${post.id}`}>View Post</Link>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default UserPosts;
+
+
 
 
 

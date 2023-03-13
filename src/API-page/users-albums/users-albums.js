@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './users-albums.scss';
 
 const UsersAlbums = () => {
   const [users, setUsers] = useState([]);
@@ -24,15 +25,15 @@ const UsersAlbums = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-users-albums-con">
       <h1>Users Albums Page</h1>
       {error && <p>{error}</p>}
-      <ul>
+      <ul className="user-albums-con">
         {users.map(user => (
           <li key={user.id}>
             <h3><Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link></h3>
             {albums.filter(album => album.userId === user.id).map(album => (
-              <div key={album.albumId}>
+              <div className="album-con" key={album.albumId}>
                 <h4>{album.title}</h4>
                 {album.images.map(image => (
                   <Link to={`/users/${user.id}/albums/${album.albumId}/images/${image.id}`} key={image.id}>
@@ -41,7 +42,6 @@ const UsersAlbums = () => {
                 ))}
               </div>
             ))}
-
           </li>
         ))}
       </ul>
@@ -50,6 +50,7 @@ const UsersAlbums = () => {
 };
 
 export default UsersAlbums;
+
 
 
 

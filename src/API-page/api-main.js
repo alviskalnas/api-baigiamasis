@@ -43,31 +43,30 @@ const NewApi = () => {
   return (
     <div className="main-wrapper">
       <div className="users-con">
-      <h1>User list:</h1>
-      <ul>
-        {users && users.length > 0 && users.map((user, index) => {
-          const userPostsCount = getUserPostsCount(user.id);
-          return (
-            <li key={user.id}>
-              <Link to={`/users/${user.id}`}>
-                {user.name} {user.surname} ({userPostsCount} posts)
-              </Link>
-            </li>
-          );
-        })}
-
-      </ul>
+        <h1>User list:</h1>
+        <ul>
+          {users && users.length > 0 && users.map((user, index) => {
+            const userPostsCount = getUserPostsCount(user.id);
+            return (
+              <li key={user.id}>
+                <Link to={`/users/${user.id}`}>
+                  {user.name} {user.surname} ({userPostsCount} posts)
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <div className="comments-con">
-      <h2>Random comments:</h2>
-      <ul>
-        {randomComments.map(comment => (
-          <li key={comment.id}>
-            <p>{comment.body}</p>
-            <p><em>- {comment.name}, {comment.email}</em></p>
-          </li>
-        ))}
-      </ul>
+        <h2>Random comments:</h2>
+        <ul>
+          {randomComments.map(comment => (
+            <li key={comment.id}>
+              <p>{comment.body}</p>
+              <p><em>- {comment.name}, {comment.email}</em></p>
+            </li>
+          ))}
+        </ul>
       </div>
       <CommentForm addComment={addComment} comments={comments} />
     </div>

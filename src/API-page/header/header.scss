@@ -42,12 +42,13 @@
         margin-left: 20px;
 
         a {
+          font-weight: 600;
           color: black;
           text-decoration: none;
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: blue;
+            color: rgb(149, 169, 125);
           }
         }
 
@@ -60,7 +61,7 @@
 
   &.scrolled {
     z-index: 10;
-    background-color: blue;
+    background-color: rgb(42, 183, 155);
 
     .logo a,
     nav ul li a {

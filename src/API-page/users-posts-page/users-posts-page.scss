@@ -1,3 +1,29 @@
 .main-users-posts {
     margin-top: 80px;
+    .posts-list {
+          display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(100% - 60px);
+        .post {
+              flex: 0 0 50%;
+            display: inline;
+            margin-bottom: 20px;
+            border-bottom: solid;
+            h2 {
+                font-size: 18px;
+                font-family: monospace;
+            }
+            p {
+                padding: 0 10px 0 10px;
+                font-size: 12px;
+            }
+            p {
+                a {
+                    text-decoration: none;
+                    color: rgb(50, 50, 248);
+                }
+            }
+        }
+    }
 }
