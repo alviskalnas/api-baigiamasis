@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './users-page.scss'
-
+import './users-page.scss';
+import data from '../dbjson/db.json';
 
 const UsersPage = () => {
   const [users, setUsers] = useState([]);
@@ -11,22 +10,18 @@ const UsersPage = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    Promise.all([
-      axios.get('http://localhost:3000/users'),
-      axios.get('http://localhost:3000/posts'),
-      axios.get('http://localhost:3000/albums'),
-    ])
-      .then(([usersRes, postsRes, albumsRes]) => {
-        setUsers(usersRes.data);
-        const postsData = postsRes.data;
-        const albumData = albumsRes.data;
-        const firstPosts = usersRes.data.map(user => {
-          const userPosts = postsData.filter(post => post.userId === user.id);
+    const fetchData = async () => {
+      try {
+        setUsers(data.users);
+
+        const firstPosts = data.users.map(user => {
+          const userPosts = data.posts.filter(post => post.userId === user.id);
           const firstPost = userPosts.length > 0 ? userPosts[0] : null;
           return firstPost;
         });
-        const firstAlbums = usersRes.data.map(user => {
-          const userAlbums = albumData.filter(album => album.userId === user.id);
+
+        const firstAlbums = data.users.map(user => {
+          const userAlbums = data.albums.filter(album => album.userId === user.id);
           const firstAlbum = userAlbums[0]?.title ? userAlbums[0] : null;
           return firstAlbum;
         });
@@ -34,12 +29,13 @@ const UsersPage = () => {
         setFirstPosts(firstPosts);
         setFirstAlbums(firstAlbums);
         setError('');
-      })
-      .catch(err => {
+      } catch (error) {
         setError('Error fetching data');
-      });
-  }, []);
+      }
+    };
 
+    fetchData();
+  }, []);
 
   return (
     <div className="users-main-page">
@@ -81,6 +77,7 @@ const UsersPage = () => {
 };
 
 export default UsersPage;
+
 
 
 

@@ -1,33 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import './api-main.scss';
+import data from './dbjson/db.json';
 
 const NewApi = () => {
-  const [users, setUsers] = useState([]);
-  const [userPosts, setUserPosts] = useState([]);
-  const [comments, setComments] = useState([]);
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/users')
-      .then(res => {
-        setUsers(res.data);
-      })
-
-    axios.get('http://localhost:3000/posts')
-      .then(res => {
-        setUserPosts(res.data);
-      })
-
-    axios.get('http://localhost:3000/comments')
-      .then(res => {
-        setComments(res.data);
-      })
-  }, []);
-
-  const getUserPostsCount = (id) => {
-    return userPosts.filter(post => post.userId === id).length;
-  }
+  const [comments, setComments] = useState(data.comments);
 
   const getRandomComments = () => {
     const shuffled = comments.sort(() => 0.5 - Math.random());
@@ -45,8 +22,8 @@ const NewApi = () => {
       <div className="users-con">
         <h1>User list:</h1>
         <ul>
-          {users && users.length > 0 && users.map((user) => {
-            const userPostsCount = getUserPostsCount(user.id);
+          {data.users && data.users.length > 0 && data.users.map((user) => {
+            const userPostsCount = data.posts.filter(post => post.userId === user.id).length;
             return (
               <li key={user.id}>
                 <Link to={`/users/${user.id}`}>
@@ -103,11 +80,12 @@ const CommentForm = ({ addComment, comments }) => {
       </div>
       <button className="main-con-form-btn" type="submit">Submit</button>
     </form>
-
   );
 }
 
 export default NewApi;
+
+
 
 
 

@@ -1,29 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './users-posts-page.scss';
+import data from '../dbjson/db.json';
 
 const UsersPostsPage = () => {
-  const [posts, setPosts] = useState([]);
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const postsResponse = await axios.get('http://localhost:3000/posts');
-        setPosts(postsResponse.data);
-
-        const usersResponse = await axios.get('http://localhost:3000/users');
-        setUsers(usersResponse.data);
-      } catch (error) {
-        return (
-          <div>Error: {error.message}</div>
-        );
-      }
-    };
-
-    fetchData();
-  }, []);
+  const posts = data.posts;
+  const users = data.users;
 
   return (
     <div className="main-users-posts">
@@ -46,4 +28,5 @@ const UsersPostsPage = () => {
 };
 
 export default UsersPostsPage;
+
 

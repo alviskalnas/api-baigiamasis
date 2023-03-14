@@ -1,27 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './users-albums.scss';
+import data from '../dbjson/db.json';
 
 const UsersAlbums = () => {
   const [users, setUsers] = useState([]);
   const [albums, setAlbums] = useState([]);
-  const [error, setError] = useState('');
+  const [error] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/users')
-      .then(res => {
-        setUsers(res.data);
-      })
-      .catch(() => setError('Error fetching users'));
-  }, []);
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/albums')
-      .then(res => {
-        setAlbums(res.data);
-      })
-      .catch(() => setError('Error fetching albums'));
+    setUsers(data.users);
+    setAlbums(data.albums);
   }, []);
 
   return (
@@ -33,11 +22,11 @@ const UsersAlbums = () => {
           <li key={user.id}>
             <h3><Link to={`/users/${user.id}`}>{user.name} {user.surname}</Link></h3>
             {albums.filter(album => album.userId === user.id).map(album => (
-              <div className="album-con" key={album.albumId}>
+              <div className="album-con" key={`${user.id}-${album.id}`}>
                 <h4>{album.title}</h4>
                 {album.images.map(image => (
-                  <Link to={`/users/${user.id}/albums/${album.albumId}/images/${image.id}`} key={image.id}>
-                    <img src={image.url} alt={`Album ${album.albumId} ${image.id}`} />
+                  <Link to={`/users/${user.id}/albums/${album.id}/images/${image.id}`} key={image.id}>
+                    <img src={image.url} alt={`Album ${album.id} ${image.id}`} />
                   </Link>
                 ))}
               </div>
@@ -50,6 +39,9 @@ const UsersAlbums = () => {
 };
 
 export default UsersAlbums;
+
+
+
 
 
 
