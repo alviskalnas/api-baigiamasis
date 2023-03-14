@@ -1,15 +1,15 @@
 .header {
-
   @media screen and (max-width: 768px) {
     height: 60px;
     font-size: 0.8rem;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
 
   @media screen and (max-width: 480px) {
     height: 50px;
     font-size: 0.6rem;
   }
+
   position: fixed;
   z-index: 10;
   top: 0;
@@ -17,7 +17,7 @@
   right: 0;
   z-index: 2;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   background-color: white;
@@ -25,7 +25,6 @@
   transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   .logo {
-
     @media screen and (max-width: 768px) {
       margin-left: 10px;
       height: 30px;
@@ -41,27 +40,22 @@
     background-size: contain;
     background-position: start;
     animation: rotate 5s linear infinite;
-    
   }
 
-@keyframes rotate {
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-
-  
- 
+  }
 
   nav {
-  
     width: calc(100% / 3);
     ul {
       @media screen and (max-width: 768px) {
-      margin-left: 30px;
+        margin-left: 30px;
       }
       display: flex;
       justify-content: space-evenly;
@@ -93,6 +87,10 @@
   &.scrolled {
     z-index: 10;
     background-color: rgb(42, 183, 155);
+
+    .logo {
+      background-color: rgb(42, 183, 155);
+    }
 
     .logo a,
     nav ul li a {
