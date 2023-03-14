@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import UserPosts from '../user-posts-page/user-posts-page';
 import './user-page.scss';
+import data from '../dbjson/db.json';
 
 const UserPage = () => {
   const [user, setUser] = useState(null);
@@ -11,22 +11,15 @@ const UserPage = () => {
   const [userPosts, setUserPosts] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/users/${id}`)
-      .then(res => {
-        setUser(res.data);
-      })
-  
-    axios.get(`http://localhost:3000/albums?userId=${id}`)
-      .then(res => {
-        setUserAlbums(res.data);
-      })
-  
-    axios.get(`http://localhost:3000/posts?userId=${id}`)
-      .then(res => {
-        setUserPosts(res.data);
-      })
+    const userData = data.users.find(user => user.id === Number(id));
+    setUser(userData);
+
+    const userAlbumData = data.albums.filter(album => album.userId === Number(id));
+    setUserAlbums(userAlbumData);
+
+    const userPostData = data.posts.filter(post => post.userId === Number(id));
+    setUserPosts(userPostData);
   }, [id]);
-  
 
   return (
     <div className="user-page-main">
@@ -61,6 +54,7 @@ const UserPage = () => {
 };
 
 export default UserPage;
+
 
 
 
