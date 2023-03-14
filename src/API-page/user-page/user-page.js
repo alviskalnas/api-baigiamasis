@@ -7,7 +7,7 @@ import data from '../dbjson/db.json';
 const UserPage = () => {
   const [user, setUser] = useState(null);
   const [userAlbums, setUserAlbums] = useState([]);
-  const { id, postId } = useParams();
+  const { id } = useParams();
   const [userPosts, setUserPosts] = useState([]);
 
   useEffect(() => {
@@ -30,10 +30,10 @@ const UserPage = () => {
           <p>Username: {user.username}</p>
           <p>Email: {user.email}</p>
           <p>Address: {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}</p>
-          <p>Geo: Lat: {user.address.geo.lat}, Lng: {user.address.geo.lng}</p>
           <p>Phone: {user.phone}</p>
           <p>Website: {user.website}</p>
-          <UserPosts userId={id} postId={postId} user={user} posts={userPosts} />
+          <p>Geo: Lat: {user.address.geo.lat}, Lng: {user.address.geo.lng} <a href={`https://www.google.com/maps/search/?api=1&query=${user.address.geo.lat},${user.address.geo.lng}`} target="_blank" rel="noopener noreferrer">View on Google Maps</a></p>
+          <UserPosts userId={id} user={user} userPosts={userPosts} />
           <h2>Albums:</h2>
           <ul>
             {userAlbums && userAlbums.length > 0 && userAlbums.map((album, index) => (
@@ -54,6 +54,7 @@ const UserPage = () => {
 };
 
 export default UserPage;
+
 
 
 

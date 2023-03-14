@@ -2,11 +2,24 @@
     margin-top: 90px;
     width: 100%;
     .user-info-page {
-      .user-posts-page {}
-      h2 {}
+      .user-posts-page {
+        background: rgb(221, 221, 220);
+      }
+      h2 {
+        color: green;
+      }
       ul {
         display: inline;
-        
+        li{
+          h3 {
+            color: #333;
+          }
+          .album-images {
+            img {
+              padding: 10px;
+            }
+          }
+        }
       }
     }
 }

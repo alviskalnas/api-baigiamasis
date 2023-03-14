@@ -1,9 +1,16 @@
 .main-wrapper {
+    @media screen and (max-width: 480px) {
+     display: flex;
+     flex-direction: column;       
+    }
     position: relative;
     display: flex;
     margin-top: 80px;
 
     .users-con {
+        @media screen and (max-width: 480px) {
+            width: 100px;
+          }
         background: #b8b6b6;
         border-radius: 5px;
         position: relative;

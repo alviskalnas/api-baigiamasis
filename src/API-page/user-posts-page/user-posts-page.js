@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './user-posts-page.scss';
-import data from '../dbjson/db.json';
 
-const UserPosts = ({ userId, user }) => {
-  const [posts, setPosts] = useState([]);
-  const [error] = useState(null);
-
-  useEffect(() => {
-    const postsData = data.posts.filter(post => post.userId === userId);
-    setPosts(postsData);
-  }, [userId]);
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
+const UserPosts = ({ userId, user, userPosts }) => {
   return (
     <div className="user-posts-page">
       <h1>User Posts</h1>
       <div className="posts-info">
-        {posts.map(post => (
+        {userPosts.map(post => (
           <div className="user-post-con" key={post.id}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
@@ -34,6 +21,8 @@ const UserPosts = ({ userId, user }) => {
 };
 
 export default UserPosts;
+
+
 
 
 
