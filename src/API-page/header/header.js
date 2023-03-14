@@ -20,7 +20,9 @@ const Header = () => {
   return (
     <header className={isScrolled ? 'header scrolled' : 'header'}>
       <div className="logo">
-        <Link  to="/">2023 Company Name</Link>
+        <Link to="/" className="logo-link">
+          <div className="logo-image"></div>
+        </Link>
       </div>
       <nav>
         <ul>
