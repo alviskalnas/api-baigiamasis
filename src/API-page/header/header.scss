@@ -28,9 +28,18 @@
     margin-left: 50px;
     width: calc(100% / 3);
     a {
-      text-decoration: none;
-      color: #111;
+      animation: rotate 5s infinite linear;
     }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
   }
 
   nav {
