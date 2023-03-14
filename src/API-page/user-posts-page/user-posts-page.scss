@@ -1,20 +1,52 @@
 .user-posts-page {
     margin-top: 80px;
-    width: calc(100%);
-    h1 {}
+
+    h1 {
+        margin-bottom: 40px;
+        font-family: monospace;
+        color: #333;
+    }
 
     .posts-info {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         width: calc(100% - 60px);
 
         .user-post-con {
-            flex: 0 0 50%;
+            
             display: inline;
             margin-bottom: 20px;
             border-bottom: solid;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            p {
+                padding: 10px 20px 20px 20px;
+                font-family: sans-serif;
+            }
+
+            a {
+                padding-bottom: 10px;
+                text-decoration: none;
+            }
         }
     }
-   
+
+}
+h2 {
+    margin-top: 30px;
+    font-family: sans-serif;
+    color: #333;
 }
