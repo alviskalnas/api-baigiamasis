@@ -1,14 +1,17 @@
 .main-users-posts {
     margin-top: 80px;
     .posts-list {
-          display: flex;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         width: calc(100% - 60px);
         .post {
-              flex: 0 0 50%;
-            display: inline;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40%;
+            margin: 0 20px 20px 0;
             border-bottom: solid;
             h2 {
                 font-size: 18px;

@@ -45,7 +45,7 @@ const NewApi = () => {
       <div className="users-con">
         <h1>User list:</h1>
         <ul>
-          {users && users.length > 0 && users.map((user, index) => {
+          {users && users.length > 0 && users.map((user) => {
             const userPostsCount = getUserPostsCount(user.id);
             return (
               <li key={user.id}>
