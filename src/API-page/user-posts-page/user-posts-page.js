@@ -1,23 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './user-posts-page.scss';
+import data from '../dbjson/db.json';
 
 const UserPosts = ({ userId, user }) => {
   const [posts, setPosts] = useState([]);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { data: postsData } = await axios.get(`http://localhost:3000/posts?userId=${userId}`);
-        setPosts(postsData);
-      } catch (error) {
-        setError(error);
-      }
-    };
-
-    fetchData();
+    const postsData = data.posts.filter(post => post.userId === userId);
+    setPosts(postsData);
   }, [userId]);
 
   if (error) {
@@ -42,6 +34,7 @@ const UserPosts = ({ userId, user }) => {
 };
 
 export default UserPosts;
+
 
 
 
